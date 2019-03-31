@@ -31,7 +31,7 @@ class CoverFlow extends StatefulWidget {
 
   const CoverFlow({Key key,this.goToPageNumber, @required this.itemBuilder, this.dismissibleItems: true,
     this.dismissedCallback, this.viewportFraction: .85, this.height: 525,
-    this.width: 700, this.itemCount: null, this.startIndex: null, this.currentItemChangedCallback: null, this.controllerValueNotifier})
+    this.width: 700, this.itemCount, this.startIndex, this.currentItemChangedCallback, this.controllerValueNotifier})
       : assert(itemBuilder != null), super(key: key);
 
   @override

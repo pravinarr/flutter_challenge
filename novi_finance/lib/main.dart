@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:novi_finance/pages/budget.dart';
-import 'package:novi_finance/pages/my_cards.dart';
 import 'package:novi_finance/pages/overview.dart';
 
 void main() => runApp(MyApp());

@@ -144,7 +144,7 @@ class _CharSelectedLabelState extends State<CharSelectedLabel> {
               borderRadius: BorderRadius.circular(10.0)
             ),
             child: Text(
-              '\$${value}',
+              '\$$value',
               textScaleFactor: 1.2,
               style: TextStyle(color: Colors.white),
             ),

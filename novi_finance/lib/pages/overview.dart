@@ -27,7 +27,7 @@ class _OverviewState extends State<Overview>
             color: Colors.black45,
           ),
           onPressed: () {
-           // notifier.value = true;
+            // notifier.value = true;
           },
         ),
         title: Center(
@@ -85,7 +85,7 @@ class _OverviewBodyState extends State<OverviewBody>
         .animate(_controller);
   }
 
-   @override
+  @override
   void dispose() {
     _controller.dispose();
     super.dispose();
@@ -150,8 +150,8 @@ class _OverviewBodyState extends State<OverviewBody>
                               textScaleFactor: 1.2,
                               style: TextStyle(fontWeight: FontWeight.w600),
                             ),
-                            FlatButton(
-                              onPressed: () {
+                            GestureDetector(
+                              onTap: () {
                                 widget.notifier.value = !widget.notifier.value;
                               },
                               child: Text(
@@ -202,8 +202,8 @@ class _OverviewBodyState extends State<OverviewBody>
                             textScaleFactor: 1.2,
                             style: TextStyle(fontWeight: FontWeight.w600),
                           ),
-                          FlatButton(
-                            onPressed: () {
+                          GestureDetector(
+                            onTap: () {
                               Navigator.of(context).pushReplacement(FadeRoute(
                                 widget: BudgetPage(),
                               ));
@@ -435,7 +435,7 @@ class _AccountCardsState extends State<AccountCards>
       ..forward();
   }
 
-   @override
+  @override
   void dispose() {
     _controller.dispose();
     super.dispose();
